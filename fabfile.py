@@ -111,14 +111,14 @@ def staging():
     env.es_endpoint = 'localhost'
 
 @task
-def india():
-    """Our production server in India."""
-    env.home = '/home/commcarehq/'
-    env.root = root = '/home/commcarehq'
-    env.environment = 'india'
+def worldbank():
+    """Our production server."""
+    env.home = '/home/l2l/'
+    env.root = root = '/home/l2l'
+    env.environment = 'worldbank'
     env.code_branch = 'master'
-    env.sudo_user = 'commcarehq'
-    env.hosts = ['220.226.209.82']
+    env.sudo_user = 'l2l'
+    env.hosts = ['166.78.2.74']
     env.user = prompt("Username: ", default=env.user)
     env.server_port = '8001'
 
