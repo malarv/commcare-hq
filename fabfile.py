@@ -317,7 +317,7 @@ def create_db():
 
 
 @task
-@parallel
+
 def bootstrap():
     """Initialize remote host environment (virtualenv, deploy, update) """
     require('root', provided_by=('staging', 'production'))
