@@ -118,7 +118,7 @@ def worldbank():
     env.environment = 'worldbank'
     env.code_branch = 'master'
     env.sudo_user = 'l2l'
-    env.hosts = ['166.78.2.74']
+    env.hosts = ['localhost']
     env.user = prompt("Username: ", default=env.user)
     env.server_port = '8001'
 
@@ -141,7 +141,7 @@ def worldbank():
         'lb': [],
         'deploy': [],
 
-        'django_monolith': ['166.78.2.74'],
+        'django_monolith': ['localhost'],
     }
     env.jython_home = '/usr/local/lib/jython'
     env.roles = ['django_monolith']
