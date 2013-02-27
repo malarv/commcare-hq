@@ -113,11 +113,11 @@ def staging():
 @task
 def worldbank():
     """Our production server."""
-    env.home = '/home/l2l/'
-    env.root = root = '/home/l2l'
+    env.home = '/home/l2l1/'
+    env.root = root = '/home/l2l1'
     env.environment = 'worldbank'
     env.code_branch = 'master'
-    env.sudo_user = 'l2l'
+    env.sudo_user = 'l2l1'
     env.hosts = ['localhost']
     env.user = prompt("Username: ", default=env.user)
     env.server_port = '8001'
