@@ -141,7 +141,7 @@ def worldbank():
         'lb': [],
         'deploy': [],
 
-        'django_monolith': ['220.226.209.82'],
+        'django_monolith': ['166.78.2.74'],
     }
     env.jython_home = '/usr/local/lib/jython'
     env.roles = ['django_monolith']
